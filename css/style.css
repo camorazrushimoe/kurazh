@@ -692,6 +692,7 @@ h1 {
     margin-top: 7px; }
 
 .minigame {
+  min-height: 100vh;
   position: relative;
   padding-bottom: 570px;
   background-size: cover;

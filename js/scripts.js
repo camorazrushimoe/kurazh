@@ -17,6 +17,7 @@ $(document).ready(function(){
 		$('.smallgame-body .main').addClass("hide");
 		$(".smallgame-body .minigame").removeClass("hide");
 		var questionNumber=$(".minigame-question-wrap").slick('slickCurrentSlide');
+		$(".slick-current").find("video")[0].play();
 		setTimeout(function(){
 
 			var interval=setInterval(function(){
@@ -104,6 +105,10 @@ $(document).ready(function(){
 
 			},smallGameTimeouts[questionNumber+1]);
 			$(".minigame-question-wrap").slick("slickNext");
+			$('video').each(function() {
+    			$(this).get(0).pause();
+			});
+			$(".slick-current").find("video")[0].play();
 
 		}
 
