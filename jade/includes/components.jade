@@ -1,0 +1,89 @@
+mixin head(title)
+	head
+		meta(charset="utf-8")
+		title= title
+
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+
+		link(rel="stylesheet" type="text/css" href="css/style.css")
+		
+		script(type="text/javascript" src="js/jquery-1.11.1.min.js")
+		block
+
+		script(type="text/javascript" src="js/libs.js")
+		block	
+		script(type="text/javascript" src="js/scripts.js")
+
+mixin header
+	header&attributes(attributes): .container Header
+
+mixin footer
+	footer.footer 
+		.container 
+			.footer-menu
+				.footer-menu-unit
+					.footer-menu-unit-image
+						img(src="images/footer-list-01.png" alt="footer-menu-unit")
+					a(href="#/").footer-menu-unit-link Календарь игр
+				.footer-menu-unit
+					.footer-menu-unit-image
+						img(src="images/footer-list-02.png" alt="footer-menu-unit")
+					a(href="#/").footer-menu-unit-link Корпоратив
+				.footer-menu-unit
+					.footer-menu-unit-image
+						img(src="images/footer-list-03.png" alt="footer-menu-unit")
+					a(href="#/").footer-menu-unit-link Подарочные сертификаты
+				.footer-menu-unit
+					.footer-menu-unit-image
+						img(src="images/footer-list-04.png" alt="footer-menu-unit")
+					a(href="#/").footer-menu-unit-link Франшиза
+				.footer-menu-unit
+					.footer-menu-unit-image
+						img(src="images/footer-list-05.png" alt="footer-menu-unit")
+					a(href="#/").footer-menu-unit-link Рейтинг команд
+				.footer-menu-unit
+					.footer-menu-unit-image
+						img(src="images/footer-list-06.png" alt="footer-menu-unit")
+					a(href="#/").footer-menu-unit-link Спонсорство и партнерство
+				.footer-menu-unit
+					.footer-menu-unit-image
+						img(src="images/footer-list-07.png" alt="footer-menu-unit")
+					a(href="#/").footer-menu-unit-link Лиги
+				.footer-menu-unit
+					.footer-menu-unit-image
+						img(src="images/footer-list-08.png" alt="footer-menu-unit")
+					a(href="#/").footer-menu-unit-link Ставки
+				.clear
+			.footer-info
+				.footer-info-unit 
+					a(href="#/") Пользовательское соглашение
+				.footer-info-unit
+					a(href="#/") Правила игры
+				.footer-info-unit
+					a(href="#/") Политика конфиденциальности
+				.footer-info-unit
+					a(href="#/") Контактная информация
+			.clear
+		.footer-bottomline
+			.container
+				.footer-bottomline-left
+					.footer-location
+						|Город:
+						| 
+						span Москва 
+					.footer-phone
+						a(href="tel:+74956445272") +7495-644-52-72
+				.footer-bottomline-right
+					.footer-feedback
+						a(href="#/") Обратная связь
+					.footer-socials
+						a(href="#/")
+							img(src="images/icon-insta.png" alt="instagram")
+						a(href="#/")
+							img(src="images/icon-fb.png" alt="instagram")
+						a(href="#/")
+							img(src="images/icon-vk.png" alt="instagram")
+					a(href="#/").footer-logo
+						img(src="images/footer-logo.png" alt="logo mozgva")
+

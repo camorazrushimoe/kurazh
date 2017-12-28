@@ -1,0 +1,302 @@
+include ./includes/components.jade
+
+doctype html
+html
+	+head ('Index')
+
+	body.smallgame-body
+		.body-wrap
+					
+			section.main
+				.hashtag.hashtag-01
+					img(src="images/hashtag.png" alt="это мозгва детка")
+				.hashtag.hashtag-02
+					img(src="images/hashtag.png" alt="это мозгва детка")
+				.hashtag.hashtag-03
+					img(src="images/hashtag.png" alt="это мозгва детка")
+				.hashtag.hashtag-04
+					img(src="images/hashtag.png" alt="это мозгва детка")
+				.main-header
+					.container
+						a(href="#/").mozgva-logo
+							img(src="images/mozgva-logo.png" alt="mozgva")
+						a(href="#/").goods-logo
+							img(src="images/goods-logo.png" alt="goods")
+						.main-header-message
+							.main-header-message-image
+								img(src="images/kurazh-image.png" alt="kurazh")
+							.main-header-message-text
+								.main-header-message-title Кураж Бамбей
+								.main-header-message-subtext Здравствуй, дружок! Во-первых с новым годом тебя! А во-вторых,
+								.main-header-message-subtext добро пожаловать на онлайн-олимпиаду «Мозгва»!
+							.clear
+
+						.clear
+				.container
+					
+
+					.main-socials
+						a(href="#/").main-socials-unit
+							img(src="images/icon-insta.png" alt="instagram")
+						a(href="#/").main-socials-unit
+							img(src="images/icon-fb.png" alt="instagram")
+						a(href="#/").main-socials-unit
+							img(src="images/icon-vk.png" alt="instagram")
+					.main-content
+						h1.main-title Игра<br>понарошку
+						.main-buttons
+							.main-buttons-unit-wrap
+								img(src="images/buttons-lights-01.png" alt="lights").lightbulb
+								img(src="images/buttons-balls-01.png" alt="lights").balls
+								a(href="#/").main-buttons-unit.small Начать
+							.main-buttons-unit-wrap
+								img(src="images/buttons-lights-02.png" alt="lights")
+								a(href="#/").main-buttons-unit.big Играть всерьез
+						.main-text
+							.main-text-big — «Мозгва» — это что?<br>— Это нечто!
+							.main-text-small Культурный вид спортивного отдыха, который может подарить как легкий веселый вечер, так и парализовать<br> вашу команду одной мыслью — победой в грандиозной Лиге Чемпионов.
+							.main-text-small Спортивного отдыха, который может подарить как легкий веселый вечер, так и парализовать вашу команду одной мыслью — победой в грандиозной Лиге Чемпионов.
+				.main-figure
+				.main-stripes
+				.main-lightbulbs-01
+				.main-lightbulbs-02
+				.main-fireworks
+				.main-branch
+			section.minigame.hide
+				.minigame-header
+					.container
+						a(href="#/").minigame-header-logo-mozgva
+							img(src="images/mozgva-logo-header.png" alt="mozgva")
+						a(href="#/").minigame-header-logo-goods
+							img(src="images/goods-logo-header.png" alt="mozgva")
+						.minigame-header-title Игра «Понарошку»
+						a(href="#/").minigame-header-button-wrap
+							img(src="images/buttons-lights-02.png" alt="lightbulbs")
+							span.minigame-header-button Играть всерьез
+				.minigame-body
+					.minigame-fireworks
+					.minigame-stripes
+					.container
+						.main-socials
+							a(href="#/").main-socials-unit
+								img(src="images/icon-insta.png" alt="instagram")
+							a(href="#/").main-socials-unit
+								img(src="images/icon-fb.png" alt="instagram")
+							a(href="#/").main-socials-unit
+								img(src="images/icon-vk.png" alt="instagram")
+						.minigame-progression
+							.minigame-progression-unit.current 1
+							.minigame-progression-unit 2
+							.minigame-progression-unit 3
+							.minigame-progression-unit 4
+							.minigame-progression-unit 5
+							.minigame-progression-unit 6
+							.minigame-progression-unit 7
+							.minigame-progression-unit 8
+							.minigame-progression-unit 9
+							.minigame-progression-unit 10
+						.minigame-question-wrap
+
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit 1Г 2Б 3А 4В
+											.minigame-question-unit-answer-picker-unit 1Б 2А 3А 4Б
+											.minigame-question-unit-answer-picker-unit 1А 2Г 3Б 4В
+											.minigame-question-unit-answer-picker-unit 1Б 2Г 3А 4В
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit «Шерлок»
+											.minigame-question-unit-answer-picker-unit «Американская история ужасов»
+											.minigame-question-unit-answer-picker-unit «Острые козырьки»
+											.minigame-question-unit-answer-picker-unit «Декстер»
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit «Младший лейтенант»
+											.minigame-question-unit-answer-picker-unit «Позови меня с собой»
+											.minigame-question-unit-answer-picker-unit «Плачет девушка в автомате»
+											.minigame-question-unit-answer-picker-unit «Фаина»
+											.minigame-question-unit-answer-picker-unit 1Б 2Г 3А 4В
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit «LOST»
+											.minigame-question-unit-answer-picker-unit «Пираты»
+											.minigame-question-unit-answer-picker-unit «17 мгновений весны»
+											.minigame-question-unit-answer-picker-unit «Мир Дикого Запада»
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit Сергей Дружко
+											.minigame-question-unit-answer-picker-unit Дин и Сэм Винчестеры
+											.minigame-question-unit-answer-picker-unit Джон Константин
+											.minigame-question-unit-answer-picker-unit Малдер и Скалли
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit Скофилдов
+											.minigame-question-unit-answer-picker-unit Соула
+											.minigame-question-unit-answer-picker-unit Донованов
+											.minigame-question-unit-answer-picker-unit Семьи Сопрано
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit В Дублине
+											.minigame-question-unit-answer-picker-unit На Мелмаке
+											.minigame-question-unit-answer-picker-unit В Альбукерке
+											.minigame-question-unit-answer-picker-unit На Кубе
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit «Американский психопат»
+											.minigame-question-unit-answer-picker-unit «Твин Пикс»
+											.minigame-question-unit-answer-picker-unit «Фарго»
+											.minigame-question-unit-answer-picker-unit «Чёрное зеркало»
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit В Вальхаллу
+											.minigame-question-unit-answer-picker-unit Открывать Америку
+											.minigame-question-unit-answer-picker-unit В Париж
+											.minigame-question-unit-answer-picker-unit На Берлин
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls)
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer
+									
+									.minigame-question-unit-answer-timer
+										span :
+										span.time 59
+									.minigame-question-unit-answer-picker
+										
+										.minigame-question-unit-answer-picker-unit.chosen Выберите вариант ответа
+										.wrap
+											.minigame-question-unit-answer-picker-unit 1Г 2Б 3А 4В
+											.minigame-question-unit-answer-picker-unit 1Б 2А 3А 4Б
+											.minigame-question-unit-answer-picker-unit 1А 2Г 3Б 4В
+											.minigame-question-unit-answer-picker-unit 1Б 2Г 3А 4В
+									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit.last
+								.minigame-question-unit-video
+									.lastSlide-kurazh
+										.lastSlide-kurazh-image
+											img(src="images/kurazh-image.png" alt="kurazh")
+										.lastSlide-kurazh-text
+											.title Кураж Бамбей говорит:
+											.subtext Н-де...эхх... Что мы все в понарошку?! Есть идея — взять друзей и сыграть вместе игру «Всерьез»
+										.clear
+
+									.lastSlide-result
+										.number 6
+										span баллов набрано
+										.clear
+									.main-buttons-unit-wrap
+										img(src="images/buttons-lights-02.png" alt="lights")
+										a(href="#/").main-buttons-unit.big Играть всерьез
+									.lastSlide-branch
+							
+
+
+		+footer
