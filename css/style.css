@@ -323,6 +323,16 @@ h1 {
 .wrapper {
   margin: 0 auto; }
 
+video::-internal-media-controls-download-button {
+  display: none; }
+
+video::-webkit-media-controls-enclosure {
+  overflow: hidden; }
+
+video::-webkit-media-controls-panel {
+  width: calc(100% + 30px);
+  /* Adjust as needed */ }
+
 .container {
   width: 1280px;
   margin: 0 auto; }
