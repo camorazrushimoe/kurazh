@@ -279,6 +279,7 @@ pre {
 	Basic styles
 	------------------------------------------------- */
 html {
+  background-color: #03091f;
   min-width: 1280px;
   height: 100%; }
 
@@ -691,6 +692,7 @@ h1 {
     margin-top: 7px; }
 
 .minigame {
+  position: relative;
   padding-bottom: 570px;
   background-size: cover;
   background-position: center center;
@@ -702,6 +704,16 @@ h1 {
     right: auto;
     left: 20px;
     top: 305px; }
+  .minigame-gradient {
+    width: 100%;
+    height: calc(100% - 100px);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    pointer-events: none;
+    background-size: cover;
+    background-image: url(../images/small-bg.png);
+    background-repeat: no-repeat; }
   .minigame-header {
     padding-top: 19px;
     height: 100px;
