@@ -45,13 +45,16 @@ html
 					.main-content
 						h1.main-title Игра<br>понарошку
 						.main-buttons
-							.main-buttons-unit-wrap
+							.main-buttons-unit-wrap.small-wrap
 								img(src="images/buttons-lights-01.png" alt="lights").lightbulb
 								img(src="images/buttons-balls-01.png" alt="lights").balls
 								a(href="#/").main-buttons-unit.small Начать
-							.main-buttons-unit-wrap
+							.main-buttons-unit-wrap.big-wrap
 								img(src="images/buttons-lights-02.png" alt="lights")
 								a(href="#/").main-buttons-unit.big Играть всерьез
+							a(href="#/").main-buttons-unit.download
+								span.info 114 Мб
+								span.text  Скачать и играть в офф-лайне
 						.main-text
 							.main-text-big — «Мозгва» — это что?<br>— Это нечто!
 							.main-text-small Культурный вид спортивного отдыха, который может подарить как легкий веселый вечер, так и парализовать<br> вашу команду одной мыслью — победой в грандиозной Лиге Чемпионов.
@@ -97,7 +100,6 @@ html
 							.minigame-progression-unit 9
 							.minigame-progression-unit 10
 						.minigame-question-wrap
-
 							.minigame-question-unit
 								.minigame-question-unit-video
 									video(width="100%" height="100%" controls controlsList="nodownload")
@@ -279,6 +281,13 @@ html
 											.minigame-question-unit-answer-picker-unit 1А 2Г 3Б 4В
 											.minigame-question-unit-answer-picker-unit 1Б 2Г 3А 4В
 									.minigame-question-unit-answer-next.answer.disabled Ответить
+							.minigame-question-unit
+								.minigame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.minigame-question-unit-answer.compare
+									.minigame-question-unit-answer-next.answer.timeout Дальше!
+							
 							.minigame-question-unit.last
 								.minigame-question-unit-video
 									.lastSlide-kurazh

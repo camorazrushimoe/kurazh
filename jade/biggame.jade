@@ -1,0 +1,749 @@
+include ./includes/components.jade
+
+doctype html
+html
+	+head ('Index')
+
+	body.biggame-body
+		.body-wrap
+					
+			section.main
+				.hashtag.hashtag-01
+					img(src="images/hashtag.png" alt="это мозгва детка")
+				.hashtag.hashtag-02
+					img(src="images/hashtag.png" alt="это мозгва детка")
+				.hashtag.hashtag-03
+					img(src="images/hashtag.png" alt="это мозгва детка")
+				.hashtag.hashtag-04
+					img(src="images/hashtag.png" alt="это мозгва детка")
+				.main-header
+					.container
+						a(href="#/").mozgva-logo
+							img(src="images/mozgva-logo.png" alt="mozgva")
+						a(href="#/").goods-logo
+							img(src="images/goods-logo.png" alt="goods")
+						.main-header-message
+							.main-header-message-image
+								img(src="images/kurazh-image.png" alt="kurazh")
+							.main-header-message-text
+								.main-header-message-title Кураж Бамбей
+								.main-header-message-subtext Здравствуй, дружок! Во-первых с новым годом тебя! А во-вторых,
+								.main-header-message-subtext добро пожаловать на онлайн-олимпиаду «Мозгва»!
+							.clear
+
+						.clear
+				.container
+					
+
+					.main-socials
+						a(href="#/").main-socials-unit
+							img(src="images/icon-insta.png" alt="instagram")
+						a(href="#/").main-socials-unit
+							img(src="images/icon-fb.png" alt="instagram")
+						a(href="#/").main-socials-unit
+							img(src="images/icon-vk.png" alt="instagram")
+					.main-content
+						h1.main-title Игра<br>всерьез
+						.main-buttons
+							.main-buttons-unit-wrap.small-wrap
+								img(src="images/buttons-lights-01.png" alt="lights").lightbulb
+								img(src="images/buttons-balls-01.png" alt="lights").balls
+								a(href="#/").main-buttons-unit.small Начать
+							
+							.main-buttons-unit-wrap.big-wrap
+								img(src="images/buttons-lights-02.png" alt="lights")
+								a(href="#/").main-buttons-unit.big Играть всерьез
+							a(href="#/").main-buttons-unit.download
+								span.info 114 Мб
+								span.text  Скачать и играть в офф-лайне
+						.main-text
+							.main-text-big — «Мозгва» — это что?<br>— Это нечто!
+							.main-text-small Культурный вид спортивного отдыха, который может подарить как легкий веселый вечер, так и парализовать<br> вашу команду одной мыслью — победой в грандиозной Лиге Чемпионов.
+							.main-text-small Спортивного отдыха, который может подарить как легкий веселый вечер, так и парализовать вашу команду одной мыслью — победой в грандиозной Лиге Чемпионов.
+				.main-figure
+				.main-stripes
+				.main-lightbulbs-01
+				.main-lightbulbs-02
+				.main-fireworks
+				.main-branch
+			section.biggame.hide
+				.minigame-gradient
+				.minigame-header
+					.container
+						a(href="#/").minigame-header-logo-mozgva
+							img(src="images/mozgva-logo-header.png" alt="mozgva")
+						a(href="#/").minigame-header-logo-goods
+							img(src="images/goods-logo-header.png" alt="mozgva")
+						.minigame-header-title Игра «Всерьез». Начало
+						a(href="#/").minigame-header-button-wrap
+							img(src="images/buttons-lights-02.png" alt="lightbulbs")
+							span.minigame-header-button Играть всерьез
+				.biggame-body-wrap
+					.minigame-fireworks
+					.minigame-stripes
+					.container
+						.main-socials
+							a(href="#/").main-socials-unit
+								img(src="images/icon-insta.png" alt="instagram")
+							a(href="#/").main-socials-unit
+								img(src="images/icon-fb.png" alt="instagram")
+							a(href="#/").main-socials-unit
+								img(src="images/icon-vk.png" alt="instagram")
+						.biggame-progression.transparent
+							.biggame-progression-unit.round-1.current
+								span.title 1
+								span.number 
+									span.current 1
+									span.all /6
+								div.name название тура
+							.biggame-progression-unit.round-2
+								span.title 2
+								span.number 
+									span.current 1
+									span.all /6
+								div.name название тура
+							.biggame-progression-unit.round-3
+								span.title 3
+								span.number 
+									span.current 1
+									span.all /6
+								div.name название тура
+							.biggame-progression-unit.round-4
+								span.title 4
+								span.number 
+									span.current 1
+									span.all /3
+								div.name название тура
+							.biggame-progression-unit.round-5
+								span.title 5
+								span.number 
+									span.current 1
+									span.all /6
+								div.name название тура
+							.biggame-progression-unit.round-6
+								span.title 6
+								span.number 
+									span.current 1
+									span.all /6
+								div.name название тура
+							.biggame-progression-unit.round-7
+								span.title 7
+								span.number 
+									span.current 1
+									span.all /6
+								div.name название тура
+							
+						.biggame-question-wrap
+							.biggame-question-unit.teamsAdding
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-title Придумайте название<br>своей команде
+								.biggame-question-unit-list
+									.biggame-question-unit-list-unit-wrap
+										input(type="text").biggame-question-unit-list-unit
+										.biggame-question-unit-list-unit-btn Еще команда
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							
+									
+							.biggame-question-unit.smallTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.smallTimer.lastQuestion
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.compare
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							.biggame-question-unit.roundResult.round-1
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-teams-wrap
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							
+							.biggame-question-unit.smallTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.smallTimer.lastQuestion
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.compare
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							.biggame-question-unit.roundResult.round-2
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-teams-wrap
+									.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							
+							.biggame-question-unit.smallTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.smallTimer.lastQuestion
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.compare
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							.biggame-question-unit.roundResult.round-3
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-teams-wrap
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							
+							.biggame-question-unit.smallTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.smallTimer.lastQuestion
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.compare
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							.biggame-question-unit.roundResult.round-4
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-teams-wrap
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+
+							.biggame-question-unit.smallTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.smallTimer.lastQuestion
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.compare
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							.biggame-question-unit.roundResult.round-5
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-teams-wrap
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							
+							.biggame-question-unit.smallTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.smallTimer.lastQuestion
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.compare
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							.biggame-question-unit.roundResult.round-6
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-teams-wrap
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							
+							.biggame-question-unit.smallTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.bigTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.medTimer
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.smallTimer.lastQuestion
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer
+									.biggame-question-unit-answer-timer
+										span :
+										span.time 59
+									.biggame-question-unit-answer-input-wrap
+										input(type="text").biggame-question-unit-answer-input
+										.biggame-question-unit-answer-next.answer Ответить
+							.biggame-question-unit.compare
+								.biggame-question-unit-video
+									video(width="100%" height="100%" controls controlsList="nodownload")
+										source(src="videos/video-01.mp4" type="video/mp4")
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+							.biggame-question-unit.roundResult.round-7
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-teams-wrap
+								.biggame-question-unit-answer.compare
+									.biggame-question-unit-answer-next.answer.timeout Дальше!
+
+							.biggame-question-unit.final
+								.main-header-message
+									.main-header-message-image
+										img(src="images/kurazh-image.png" alt="kurazh")
+									.main-header-message-text
+										.main-header-message-title Кураж Бамбей говорит
+										.main-header-message-subtext Поторописька! Осталось 3 секунды! Гуглишь та что ли?
+										.main-header-message-subtext Гугли быстрее тогда! :)
+									.clear
+								.biggame-question-unit-resultlist
+									
+								table.biggame-question-unit-resultTable
+									thead.header
+										td Команда
+										td Тур № 1
+										td 2
+										td 3
+										td 4
+										td 5
+										td 6
+										td 7
+										td Набрано баллов
+									
+							
+							
+							
+							
+							
+							
+							
+
+
+		+footer
