@@ -2,15 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Index</title>
+    <title>Сериальная «Мозгва» игра для сериальных маньяков!</title>
+    <meta name="description" content="Порадовать друзей и себя на новогодних каникулах – почти бесценно. Сыграйте дома или в гостях в Мозгву по мотивам популярных сериалов в сопровождении знакомого всем голоса Кураж-Бамбей. Всем игрокам – призы! И поцелуи!">
     <meta name="viewport" content="width=1280, initial-scale=0.1"/>
     <meta name="format-detection" content="telephone=no"/>
+    <meta property="og:title" content="Я сериальный маньяк, чего и вам желаю."/>
+    <meta property="og:description" content="В Сериальную “Мозгву” можно сыграть дома на диване, причем с друзьями и бесплатно. Сравним, кто лучше шарит в сериальчиках?"/>
+    <meta property="og:image" content="https://mozgva.s3-eu-central-1.amazonaws.com/attachments/files/000/000/048/original/mozgva-kurazh-snippet.png">
+    <meta property="og:url" content= "https://mozgva.com/series/biggame" />
+    <link rel="shortcut icon" href="https://mozgva.com/assets/favicon-3-3e0b2943e2df8471c385a6fcd1b9b6efcf655070e09ec4d4c872dac1940ef348.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/libs.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N3R5QZ');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <body class="biggame-body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3R5QZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="body-wrap">
       <section class="main">
         <div class="hashtag hashtag-01"><img src="images/hashtag.png" alt="это мозгва детка"></div>
@@ -18,11 +35,14 @@
         <div class="hashtag hashtag-03"><img src="images/hashtag.png" alt="это мозгва детка"></div>
         <div class="hashtag hashtag-04"><img src="images/hashtag.png" alt="это мозгва детка"></div>
         <div class="main-header">
-          <div class="container"><a class="mozgva-logo" href="#/"><img src="images/mozgva-logo.png" alt="mozgva"></a><a class="goods-logo" href="#/"><img src="images/goods-logo.png" alt="goods"></a>
+          <div class="container"><a class="mozgva-logo" href="https://mozgva.ru"><img src="images/mozgva-logo.png" alt="mozgva"></a><a class="goods-logo" href="https://goods.ru/"><img src="images/goods-logo.png" alt="goods"></a>
             <div class="main-header-message">
               <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
               <div class="main-header-message-text">
                 <div class="main-header-message-title">Кураж Бамбей</div>
+                <audio id="main-audio" autoplay="autoplay" controls controlsList="nodownload">
+                  <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/biggame-first.mp3" type="audio/mpeg">
+                </audio>
                 <div class="main-header-message-subtext">Здравствуй, дружок! Во-первых с новым годом тебя! А во-вторых,</div>
                 <div class="main-header-message-subtext">добро пожаловать на онлайн-олимпиаду «Мозгва»!</div>
               </div>
@@ -32,17 +52,32 @@
           </div>
         </div>
         <div class="container">
+<!--
           <div class="main-socials"><a class="main-socials-unit" href="#/"><img src="images/icon-insta.png" alt="instagram"></a><a class="main-socials-unit" href="#/"><img src="images/icon-fb.png" alt="instagram"></a><a class="main-socials-unit" href="#/"><img src="images/icon-vk.png" alt="instagram"></a></div>
+        -->
           <div class="main-content">
             <h1 class="main-title">Игра<br>всерьез</h1>
             <div class="main-buttons">
+              <div class="minigame-question-unit-answer-picker hidden">
+                  <div class="minigame-question-unit-answer-picker-unit chosen" data-number="1">Играть с самого начала</div>
+                  <div class="wrap">
+                    <div class="minigame-question-unit-answer-picker-unit" data-number="1">Играть с самого начала</div>
+                    <div class="minigame-question-unit-answer-picker-unit" data-number="2">Играть со 2 тура</div>
+                    <div class="minigame-question-unit-answer-picker-unit" data-number="3">Играть с 3 тура</div>
+                    <div class="minigame-question-unit-answer-picker-unit" data-number="4">Играть с 4 тура</div>
+                    <div class="minigame-question-unit-answer-picker-unit" data-number="5">Играть с 5 тура</div>
+                    <div class="minigame-question-unit-answer-picker-unit" data-number="6">Играть с 6 тура</div>
+                    <div class="minigame-question-unit-answer-picker-unit" data-number="7">Играть с 7 тура</div>
+                  </div>
+                </div>
+              <div class="clear"></div>
               <div class="main-buttons-unit-wrap small-wrap"><img class="lightbulb" src="images/buttons-lights-01.png" alt="lights"><img class="balls" src="images/buttons-balls-01.png" alt="lights"><a class="main-buttons-unit small" href="#/">Начать</a></div>
-              <div class="main-buttons-unit-wrap big-wrap"><img src="images/buttons-lights-02.png" alt="lights"><a class="main-buttons-unit big" href="#/">Играть всерьез</a></div><a class="main-buttons-unit download" href="#/"><span class="info">114 Мб</span><span class="text"> Скачать и играть в офф-лайне</span></a>
+              <div class="main-buttons-unit-wrap big-wrap"><img src="images/buttons-lights-02.png" alt="lights"><a  class="main-buttons-unit big" href="#/">Играть всерьез</a></div><a class="main-buttons-unit download" href="#/"><span class="info">114 Мб</span><span class="text"> Скачать и играть офлайн</span></a>
             </div>
             <div class="main-text">
-              <div class="main-text-big">— «Мозгва» — это что?<br>— Это нечто!</div>
-              <div class="main-text-small">Культурный вид спортивного отдыха, который может подарить как легкий веселый вечер, так и парализовать<br> вашу команду одной мыслью — победой в грандиозной Лиге Чемпионов.</div>
-              <div class="main-text-small">Спортивного отдыха, который может подарить как легкий веселый вечер, так и парализовать вашу команду одной мыслью — победой в грандиозной Лиге Чемпионов.</div>
+              <div class="main-text-big">- Сериальная "Мозгва" <br>- Это что?<br>- Это игра "Всерьез" <br>и любовь на всю жизнь</div>
+              <div class="main-text-small">Ну вот вы и попали “Всерьез”! В этой игре все вопросы, естественно, касаются сериалов, и мы скоро узнаем, насколько вы в них разбираетесь. В игре 7 туров, у некоторых из них особенные правила, о чем мы еще расскажем. </div>
+              <div class="main-text-small">В начале игры вы можете поделиться на команды для соревновательного эффекта или сыграть большой дружной компанией, а в конце все участники получат спонсорские бонусы.</div>
             </div>
           </div>
         </div>
@@ -64,28 +99,30 @@
           <div class="minigame-fireworks"></div>
           <div class="minigame-stripes"></div>
           <div class="container">
+<!--
             <div class="main-socials"><a class="main-socials-unit" href="#/"><img src="images/icon-insta.png" alt="instagram"></a><a class="main-socials-unit" href="#/"><img src="images/icon-fb.png" alt="instagram"></a><a class="main-socials-unit" href="#/"><img src="images/icon-vk.png" alt="instagram"></a></div>
+          -->
             <div class="biggame-progression transparent">
               <div class="biggame-progression-unit round-1 current"><span class="title">1</span><span class="number"> <span class="current">1</span><span class="all">/6</span></span>
-                <div class="name">название тура</div>
+                <div class="name">1 Тур. Факты</div>
               </div>
               <div class="biggame-progression-unit round-2"><span class="title">2</span><span class="number"> <span class="current">1</span><span class="all">/6</span></span>
-                <div class="name">название тура</div>
+                <div class="name">2 Тур. Шоу МозGo On</div>
               </div>
               <div class="biggame-progression-unit round-3"><span class="title">3</span><span class="number"> <span class="current">1</span><span class="all">/6</span></span>
-                <div class="name">название тура</div>
+                <div class="name">3 тур. Родные сериальчики</div>
               </div>
               <div class="biggame-progression-unit round-4"><span class="title">4</span><span class="number"> <span class="current">1</span><span class="all">/3</span></span>
-                <div class="name">название тура</div>
+                <div class="name">4 Тур. Рынок Мозгвы</div>
               </div>
               <div class="biggame-progression-unit round-5"><span class="title">5</span><span class="number"> <span class="current">1</span><span class="all">/6</span></span>
-                <div class="name">название тура</div>
+                <div class="name">5 тур. Отдел нравов.</div>
               </div>
               <div class="biggame-progression-unit round-6"><span class="title">6</span><span class="number"> <span class="current">1</span><span class="all">/6</span></span>
-                <div class="name">название тура</div>
+                <div class="name">6 Тур. Девушки против</div>
               </div>
               <div class="biggame-progression-unit round-7"><span class="title">7</span><span class="number"> <span class="current">1</span><span class="all">/6</span></span>
-                <div class="name">название тура</div>
+                <div class="name">7 Тур. Блиц</div>
               </div>
             </div>
             <div class="biggame-question-wrap">
@@ -93,10 +130,14 @@
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
-                    <div class="main-header-message-title">Кураж Бамбей говорит</div>
-                    <div class="main-header-message-subtext">Поторописька! Осталось 3 секунды! Гуглишь та что ли?</div>
-                    <div class="main-header-message-subtext">Гугли быстрее тогда! :)</div>
+                    <div class="main-header-message-title">Кураж Бамбей:</div>
+                    <audio id="teamsAdding-audio" autoplay="autoplay" controls controlsList="nodownload">
+                      <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/biggame-second.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="main-header-message-subtext">Чем смешнее название команды, тем больше шансов на победу!</div>
+                    <div class="main-header-message-subtext">Кстати, команд может быть несколько. Когда все согласуете, жмите кнопочку “Играем”!</div>
                   </div>
+                  <a class="main-buttons-unit download" target="_blank" href="https://s3.eu-central-1.amazonaws.com/serials-mozgva/blank.pdf"><span class="info">|</span><span class="text">Скачать пример бланка</span></a>
                   <div class="clear"></div>
                 </div>
                 <div class="biggame-question-unit-title">Придумайте название<br>своей команде</div>
@@ -107,13 +148,14 @@
                   </div>
                 </div>
                 <div class="biggame-question-unit-answer compare">
-                  <div class="biggame-question-unit-answer-next answer timeout">Дальше!</div>
+                  <div class="biggame-question-unit-answer-next answer timeout" data-number="1">Играем!</div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer">
+              <!-- Первый вопрос первого тура -->
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour1/1_1.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -126,36 +168,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour1/1_2.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -168,8 +182,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour1/1_3.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -180,10 +194,38 @@
                   </div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer lastQuestion">
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour1/1_4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour1/1_5.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer lastQuestion">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour1/1_6.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -196,8 +238,8 @@
               </div>
               <div class="biggame-question-unit compare">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour1/sverka1.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer compare">
@@ -208,21 +250,27 @@
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
-                    <div class="main-header-message-title">Кураж Бамбей говорит</div>
-                    <div class="main-header-message-subtext">Поторописька! Осталось 3 секунды! Гуглишь та что ли?</div>
-                    <div class="main-header-message-subtext">Гугли быстрее тогда! :)</div>
+                    <div class="main-header-message-title">Кураж Бамбей</div>
+<!--
+                    <audio autoplay="autoplay" controls controlsList="nodownload">
+                      <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour1/poslesverki.mp3" type="audio/mpeg">
+                    </audio>
+-->
+                    <div class="main-header-message-subtext">Укажите, какое кол-во баллов набрали команды</div>
+                    <div class="main-header-message-subtext">Только чур не мухлюем!</div>
                   </div>
                   <div class="clear"></div>
                 </div>
                 <div class="biggame-question-unit-teams-wrap"></div>
                 <div class="biggame-question-unit-answer compare">
-                  <div class="biggame-question-unit-answer-next answer timeout">Дальше!</div>
+                  <div class="biggame-question-unit-answer-next answer timeout">ТУР 2</div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer">
+              <!-- Второй тур -->
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour2/1.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -235,36 +283,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour2/2.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -277,8 +297,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour2/3.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -289,10 +309,38 @@
                   </div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer lastQuestion">
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour2/4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour2/5.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer lastQuestion">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour2/6.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -305,8 +353,8 @@
               </div>
               <div class="biggame-question-unit compare">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour2/sverka.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer compare">
@@ -317,21 +365,27 @@
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
-                    <div class="main-header-message-title">Кураж Бамбей говорит</div>
-                    <div class="main-header-message-subtext">Поторописька! Осталось 3 секунды! Гуглишь та что ли?</div>
-                    <div class="main-header-message-subtext">Гугли быстрее тогда! :)</div>
+                    <div class="main-header-message-title">Кураж Бамбей</div>
+                    <!--
+                    <audio autoplay="autoplay" controls controlsList="nodownload">
+                      <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour2/poslesverky2.mp3" type="audio/mpeg">
+                    </audio>
+                  -->
+                    <div class="main-header-message-subtext">Теперь только по честному,</div>
+                    <div class="main-header-message-subtext">сколько набрали?</div>
                   </div>
                   <div class="clear"></div>
                 </div>
                 <div class="biggame-question-unit-teams-wrap"></div>
                 <div class="biggame-question-unit-answer compare">
-                  <div class="biggame-question-unit-answer-next answer timeout">Дальше!</div>
+                  <div class="biggame-question-unit-answer-next answer timeout">ТУР 3</div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer">
+                <!-- Третий тур -->
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour3/1.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -344,36 +398,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour3/2.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -386,8 +412,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour3/3.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -398,10 +424,38 @@
                   </div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer lastQuestion">
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour3/4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour3/5.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer lastQuestion">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour3/6.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -414,8 +468,8 @@
               </div>
               <div class="biggame-question-unit compare">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour3/sverka3tour.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer compare">
@@ -426,21 +480,25 @@
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
-                    <div class="main-header-message-title">Кураж Бамбей говорит</div>
-                    <div class="main-header-message-subtext">Поторописька! Осталось 3 секунды! Гуглишь та что ли?</div>
-                    <div class="main-header-message-subtext">Гугли быстрее тогда! :)</div>
+                    <div class="main-header-message-title">Кураж Бамбей</div>
+                    <audio autoplay="autoplay" controls controlsList="nodownload">
+                      <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour3/poslesverky3.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="main-header-message-subtext">Неужто разбираетесь в наших сериалах?</div>
+                    <div class="main-header-message-subtext">Ну пишите как есть</div>
                   </div>
                   <div class="clear"></div>
                 </div>
                 <div class="biggame-question-unit-teams-wrap"></div>
                 <div class="biggame-question-unit-answer compare">
-                  <div class="biggame-question-unit-answer-next answer timeout">Дальше!</div>
+                  <div class="biggame-question-unit-answer-next answer timeout">ТУР 4</div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer">
+              <!-- Тур 4 -->
+              <div class="biggame-question-unit bigTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour4/1.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -451,10 +509,10 @@
                   </div>
                 </div>
               </div>
-              <div class="biggame-question-unit medTimer">
+              <div class="biggame-question-unit bigTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour4/2.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -465,10 +523,10 @@
                   </div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer lastQuestion">
+              <div class="biggame-question-unit bigTimer lastQuestion">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour4/3.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -481,8 +539,8 @@
               </div>
               <div class="biggame-question-unit compare">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour4/sverka.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer compare">
@@ -493,21 +551,25 @@
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
-                    <div class="main-header-message-title">Кураж Бамбей говорит</div>
-                    <div class="main-header-message-subtext">Поторописька! Осталось 3 секунды! Гуглишь та что ли?</div>
-                    <div class="main-header-message-subtext">Гугли быстрее тогда! :)</div>
+                    <div class="main-header-message-title">Кураж Бамбей</div>
+                    <audio autoplay="autoplay" controls controlsList="nodownload">
+                      <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour4/poslesverky4.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="main-header-message-subtext">Наплюсовали?</div>
+                    <div class="main-header-message-subtext">Эх… Так что в итоге?</div>
                   </div>
                   <div class="clear"></div>
                 </div>
                 <div class="biggame-question-unit-teams-wrap"></div>
                 <div class="biggame-question-unit-answer compare">
-                  <div class="biggame-question-unit-answer-next answer timeout">Дальше!</div>
+                  <div class="biggame-question-unit-answer-next answer timeout">ТУР 5</div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer">
+              <!-- Тур 5 -->
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour5/1.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -520,36 +582,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour5/2.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -562,8 +596,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour5/3.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -574,10 +608,38 @@
                   </div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer lastQuestion">
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour5/4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour5/5.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer lastQuestion">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour5/6.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -590,8 +652,8 @@
               </div>
               <div class="biggame-question-unit compare">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour5/sverka.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer compare">
@@ -602,21 +664,25 @@
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
-                    <div class="main-header-message-title">Кураж Бамбей говорит</div>
-                    <div class="main-header-message-subtext">Поторописька! Осталось 3 секунды! Гуглишь та что ли?</div>
-                    <div class="main-header-message-subtext">Гугли быстрее тогда! :)</div>
+                    <div class="main-header-message-title">Кураж Бамбей</div>
+                    <audio autoplay="autoplay" controls controlsList="nodownload">
+                      <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour5/poslesverky5.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="main-header-message-subtext">Главное, нужно было ответить про Чака Норриса.</div>
+                    <div class="main-header-message-subtext">За него 3 балла. Шучу, шучу.</div>
                   </div>
                   <div class="clear"></div>
                 </div>
                 <div class="biggame-question-unit-teams-wrap"></div>
                 <div class="biggame-question-unit-answer compare">
-                  <div class="biggame-question-unit-answer-next answer timeout">Дальше!</div>
+                  <div class="biggame-question-unit-answer-next answer timeout">ТУР 6</div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer">
+              <!-- Тур 6 -->
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/1.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -629,36 +695,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div class="biggame-question-unit-answer">
-                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
-                  <div class="biggame-question-unit-answer-input-wrap">
-                    <input class="biggame-question-unit-answer-input" type="text">
-                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
-                  </div>
-                </div>
-              </div>
-              <div class="biggame-question-unit bigTimer">
-                <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/2.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -671,8 +709,8 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/3.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -683,10 +721,38 @@
                   </div>
                 </div>
               </div>
-              <div class="biggame-question-unit smallTimer lastQuestion">
+              <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/4.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/5.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="biggame-question-unit-answer">
+                  <div class="biggame-question-unit-answer-timer"><span>:</span><span class="time">59</span></div>
+                  <div class="biggame-question-unit-answer-input-wrap">
+                    <input class="biggame-question-unit-answer-input" type="text">
+                    <div class="biggame-question-unit-answer-next answer">Ответить</div>
+                  </div>
+                </div>
+              </div>
+              <div class="biggame-question-unit medTimer lastQuestion">
+                <div class="biggame-question-unit-video">
+                  <video width="100%" height="100%">
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/6.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer">
@@ -699,8 +765,8 @@
               </div>
               <div class="biggame-question-unit compare">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
-                    <source src="videos/video-01.mp4" type="video/mp4">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
+                    <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/sverka.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="biggame-question-unit-answer compare">
@@ -711,20 +777,24 @@
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
-                    <div class="main-header-message-title">Кураж Бамбей говорит</div>
-                    <div class="main-header-message-subtext">Поторописька! Осталось 3 секунды! Гуглишь та что ли?</div>
-                    <div class="main-header-message-subtext">Гугли быстрее тогда! :)</div>
+                    <div class="main-header-message-title">Кураж Бамбей</div>
+                    <audio autoplay="autoplay" controls controlsList="nodownload" preload='metadata'>
+                      <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/poslesverky6.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="main-header-message-subtext">Ну, на фоне остальных вы еще неплохо играете.</div>
+                    <div class="main-header-message-subtext">Остался решающий тур.</div>
                   </div>
                   <div class="clear"></div>
                 </div>
                 <div class="biggame-question-unit-teams-wrap"></div>
                 <div class="biggame-question-unit-answer compare">
-                  <div class="biggame-question-unit-answer-next answer timeout">Дальше!</div>
+                  <div class="biggame-question-unit-answer-next answer timeout">ТУР 7</div>
                 </div>
               </div>
+              <!-- ТУР 7 -->
               <div class="biggame-question-unit smallTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
                     <source src="videos/video-01.mp4" type="video/mp4">
                   </video>
                 </div>
@@ -738,7 +808,7 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
                     <source src="videos/video-01.mp4" type="video/mp4">
                   </video>
                 </div>
@@ -752,7 +822,7 @@
               </div>
               <div class="biggame-question-unit bigTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
                     <source src="videos/video-01.mp4" type="video/mp4">
                   </video>
                 </div>
@@ -766,7 +836,7 @@
               </div>
               <div class="biggame-question-unit bigTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
                     <source src="videos/video-01.mp4" type="video/mp4">
                   </video>
                 </div>
@@ -780,7 +850,7 @@
               </div>
               <div class="biggame-question-unit medTimer">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
                     <source src="videos/video-01.mp4" type="video/mp4">
                   </video>
                 </div>
@@ -794,7 +864,7 @@
               </div>
               <div class="biggame-question-unit smallTimer lastQuestion">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
                     <source src="videos/video-01.mp4" type="video/mp4">
                   </video>
                 </div>
@@ -808,7 +878,7 @@
               </div>
               <div class="biggame-question-unit compare">
                 <div class="biggame-question-unit-video">
-                  <video width="100%" height="100%" controls controlsList="nodownload">
+                  <video width="100%" height="100%" controls controlsList="nodownload" preload='metadata'>
                     <source src="videos/video-01.mp4" type="video/mp4">
                   </video>
                 </div>
@@ -820,9 +890,12 @@
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
-                    <div class="main-header-message-title">Кураж Бамбей говорит</div>
-                    <div class="main-header-message-subtext">Поторописька! Осталось 3 секунды! Гуглишь та что ли?</div>
-                    <div class="main-header-message-subtext">Гугли быстрее тогда! :)</div>
+                    <div class="main-header-message-title">Кураж Бамбей</div>
+                    <audio autoplay="autoplay" controls controlsList="nodownload">
+                      <source src="https://s3.eu-central-1.amazonaws.com/serials-mozgva/full-game/tour6/poslesverky6.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="main-header-message-subtext">Мы тут надеемся на вашу честность, конечно.</div>
+                    <div class="main-header-message-subtext">Давайте складывать баллы.</div>
                   </div>
                   <div class="clear"></div>
                 </div>
@@ -832,6 +905,12 @@
                 </div>
               </div>
               <div class="biggame-question-unit final">
+                <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                <script src="https://yastatic.net/share2/share.js"></script>
+                <div class="share-wrap">  
+                    <p>  Поделиться игрой с друзьями:</p>
+                    <div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter" data-counter=""></div>
+                  </div>
                 <div class="main-header-message">
                   <div class="main-header-message-image"><img src="images/kurazh-image.png" alt="kurazh"></div>
                   <div class="main-header-message-text">
@@ -855,46 +934,57 @@
                     <td>Набрано баллов</td>
                   </thead>
                 </table>
+                <br>
+                <div class="end-button-biggame">
+                  <center>
+                    <a id="mozgva-home" class="main-buttons-unit small" href="https://mozgva.com/home">Еще игры</a>
+                    <a id="mozgva-calendar" class="main-buttons-unit small" href="https://mozgva.com/calendar">Мозгва оффлайн</a>
+                    <a id="mozgva-franchise" class="main-buttons-unit small" href="https://mozgva.com/franchise">Франшиза</a>
+
+    <br><br><p>А вот и подарочек от goods.ru:</p>
+    <a href="https://goods.ru/?utm_source=Mozgvacom&utm_medium=%D0%A1herries&utm_campaign=Mozgva" target="_blank"><img src="https://mozgva.s3-eu-central-1.amazonaws.com/attachments/files/000/000/046/original/mozgva-500x237px-goods.png?1512726979"></a>
+                  </center>
+              </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-    <footer class="footer"> 
-      <div class="container"> 
+    <footer class="footer">
+      <div class="container">
         <div class="footer-menu">
           <div class="footer-menu-unit">
-            <div class="footer-menu-unit-image"><img src="images/footer-list-01.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="#/">Календарь игр</a>
+            <div class="footer-menu-unit-image"><img src="images/footer-list-01.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="https://mozgva.com/calendar">Календарь игр</a>
           </div>
           <div class="footer-menu-unit">
-            <div class="footer-menu-unit-image"><img src="images/footer-list-02.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="#/">Корпоратив</a>
+            <div class="footer-menu-unit-image"><img src="images/footer-list-02.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="https://mozgva.com/korporat">Корпоратив</a>
           </div>
           <div class="footer-menu-unit">
-            <div class="footer-menu-unit-image"><img src="images/footer-list-03.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="#/">Подарочные сертификаты</a>
+            <div class="footer-menu-unit-image"><img src="images/footer-list-03.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="https://mozgva.com/sert">Подарочные сертификаты</a>
           </div>
           <div class="footer-menu-unit">
-            <div class="footer-menu-unit-image"><img src="images/footer-list-04.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="#/">Франшиза</a>
+            <div class="footer-menu-unit-image"><img src="images/footer-list-04.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="https://mozgva.com/franchise">Франшиза</a>
           </div>
           <div class="footer-menu-unit">
-            <div class="footer-menu-unit-image"><img src="images/footer-list-05.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="#/">Рейтинг команд</a>
+            <div class="footer-menu-unit-image"><img src="images/footer-list-05.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="https://mozgva.com/rating">Рейтинг команд</a>
           </div>
           <div class="footer-menu-unit">
-            <div class="footer-menu-unit-image"><img src="images/footer-list-06.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="#/">Спонсорство и партнерство</a>
+            <div class="footer-menu-unit-image"><img src="images/footer-list-06.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="https://mozgva.com/partners">Спонсорство и партнерство</a>
           </div>
           <div class="footer-menu-unit">
-            <div class="footer-menu-unit-image"><img src="images/footer-list-07.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="#/">Лиги</a>
+            <div class="footer-menu-unit-image"><img src="images/footer-list-07.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="https://mozgva.com/champions_leagues">Лиги</a>
           </div>
           <div class="footer-menu-unit">
-            <div class="footer-menu-unit-image"><img src="images/footer-list-08.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="#/">Ставки</a>
+            <div class="footer-menu-unit-image"><img src="images/footer-list-08.png" alt="footer-menu-unit"/></div><a class="footer-menu-unit-link" href="https://mozgva.com/bets">Прогнозы</a>
           </div>
           <div class="clear"></div>
         </div>
         <div class="footer-info">
-          <div class="footer-info-unit"> <a href="#/">Пользовательское соглашение</a></div>
-          <div class="footer-info-unit"><a href="#/">Правила игры</a></div>
-          <div class="footer-info-unit"><a href="#/">Политика конфиденциальности</a></div>
-          <div class="footer-info-unit"><a href="#/">Контактная информация</a></div>
+          <div class="footer-info-unit"> <a href="https://mozgva.com/user_agreement">Пользовательское соглашение</a></div>
+          <div class="footer-info-unit"><a href="https://mozgva.com/game_rules">Правила игры</a></div>
+          <!-- <div class="footer-info-unit"><a href="#/">Политика конфиденциальности</a></div>
+          <div class="footer-info-unit"><a href="#/">Контактная информация</a></div> -->
         </div>
         <div class="clear"></div>
       </div>
@@ -908,8 +998,8 @@
             <div class="footer-phone"><a href="tel:+74956445272">+7495-644-52-72</a></div>
           </div>
           <div class="footer-bottomline-right">
-            <div class="footer-feedback"><a href="#/">Обратная связь</a></div>
-            <div class="footer-socials"><a href="#/"><img src="images/icon-insta.png" alt="instagram"/></a><a href="#/"><img src="images/icon-fb.png" alt="instagram"/></a><a href="#/"><img src="images/icon-vk.png" alt="instagram"/></a></div><a class="footer-logo" href="#/"><img src="images/footer-logo.png" alt="logo mozgva"/></a>
+            <div class="footer-feedback"><a href="https://mozgva.com/calendar?city_id=1#feedback_modal">Обратная связь</a></div>
+            <div class="footer-socials"><a href="https://www.instagram.com/mozgva_msk/" target="_blank"><img src="images/icon-insta.png" alt="instagram"/></a><a href="https://www.facebook.com/etomozgvadetka/" target="_blank"><img src="images/icon-fb.png" alt="instagram"/></a><a href="https://vk.com/etomozgvadetka" target="_blank"><img src="images/icon-vk.png" alt="instagram"/></a></div><a class="footer-logo" href="https://mozgva.com"><img src="images/footer-logo.png" alt="logo mozgva"/></a>
           </div>
         </div>
       </div>

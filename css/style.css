@@ -320,6 +320,66 @@ h1 {
 /*	-------------------------------------------------
 	Styles
 	------------------------------------------------- */
+.popup{
+  z-index:5;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,252,255,0.5);
+  -moz-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        -webkit-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+}
+.popup-wrap{
+  padding-top:92px;
+  text-align:   center;
+  position: fixed;
+  /* Style for "050923" */
+width: 700px;
+height: 650px;
+border-radius: 6px;
+background-color: #050923;
+top:50vh;
+left:50vw;
+
+transform:translateX(-50%)translateY(-50%);
+}
+.popup.hidden{
+    opacity:0;
+    visibility:   hidden;
+    pointer-events:none;
+}
+.minigame-question-unit.last .minigame-question-unit-video{
+    height:770px!important;
+}
+.popup-title{
+  /* Style for "Игра со зв" */
+margin-bottom:25px;
+color: #ffffff;
+ font-family: 'GraublauSlabHeavy';
+font-size: 80px;
+font-weight: 400;
+line-height: 69.1px;
+}
+.popup-text{
+  margin-bottom: 60px;
+  font-size: 20px;
+  line-height:  21px;
+}
+.popup-button{
+  /* Style for "кнопка" */
+width: 270px;
+height: 66px;
+color: #1e272a;
+cursor:   pointer;
+margin:0 auto;
+line-height:  66px;
+border-radius: 33px;
+background-color: #00fcff;
+}
 .wrapper {
   margin: 0 auto; }
 
@@ -643,7 +703,9 @@ video::-webkit-media-controls-panel {
       flex-wrap: wrap;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      height:35px;
+       }
       .footer-menu-unit-link {
         -moz-transition: all ease-in-out 0.3s;
         -o-transition: all ease-in-out 0.3s;
@@ -912,6 +974,9 @@ video::-webkit-media-controls-panel {
         border-radius: 6px;
         position: relative;
         background-color: #ffffff; }
+       .minigame-question-unit-answer-picker.hidden{
+          display: none;
+       } 
         .minigame-question-unit-answer-picker.disabled {
           pointer-events: none; }
         .minigame-question-unit-answer-picker.open .wrap {
@@ -930,6 +995,9 @@ video::-webkit-media-controls-panel {
           padding-left: 20px;
           height: 66px;
           line-height: 66px; }
+          .minigame-question-unit-answer-picker-unit{
+            border-bottom:1px solid #f3f3f3;
+          }
           .minigame-question-unit-answer-picker-unit.chosen {
             border-top-left-radius: 6px;
             border-top-right-radius: 6px;
@@ -1012,6 +1080,20 @@ video::-webkit-media-controls-panel {
       -webkit-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
       transform: scaleX(-1); }
+    .minigame-question-unit .share-wrap{
+          position: absolute;
+        top: 88px;
+         left: 600px;
+     }
+    .minigame-question-unit .ya-share2{
+      margin-top: 10px;
+    }
+    .ya-share2{
+      
+    }
+    .minigame-question-unit.last .lastSlide-kurazh .hide{
+      display: none;
+    } 
     .minigame-question-unit.last .lastSlide-kurazh-image {
       margin-right: 19px;
       float: left; }
@@ -1034,7 +1116,7 @@ video::-webkit-media-controls-panel {
       padding-right: 35px;
       text-align: center;
       width: 560px;
-      margin-top: 33px;
+      margin-top: 0px;
       font-size: 24px; }
       .minigame-question-unit.last .lastSlide-result span {
         display: inline-block;
@@ -1048,6 +1130,7 @@ video::-webkit-media-controls-panel {
         font-size: 250px;
         font-family: "GraublauSlabHeavyItalic"; }
     .minigame-question-unit.last .lastSlide-branch {
+      pointer-events:   none;
       position: absolute;
       top: 109px;
       right: 49px;
@@ -1135,6 +1218,15 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: #2af498; }
         .biggame-progression-unit.done .number {
           display: inline; }
+      .biggame-body .main-buttons{
+        margin-top: 70px;
+      }
+      .biggame-body .minigame-question-unit-answer-picker{
+        margin-top:0;
+         margin-left:34px;
+         margin-bottom: 60px;
+         width:391px;
+        }
   .biggame-question-unit.roundResult .biggame-question-unit-answer-next {
     margin-top: 100px !important; }
   .biggame-question-unit.roundResult .main-header-message {
@@ -1154,6 +1246,14 @@ input[type=number]::-webkit-outer-spin-button {
       margin-top: 30px; }
     .biggame-question-unit .main-header-message-title:after {
       display: none; }
+  .biggame-question-unit .share-wrap{
+        position: absolute;
+      top: 85px;
+      left: 670px;
+  }
+   .biggame-question-unit .ya-share2{
+    margin-top:10px;
+   }
   .biggame-question-unit-video {
     margin: 0 auto;
     margin-bottom: 5px;
@@ -1478,3 +1578,9 @@ input[type=number]::-webkit-outer-spin-button {
       font-size: 48px;
       font-weight: 700;
       text-align: left; }
+
+
+
+      a#button-smallgame-end-restart {
+    margin-top: 35px;
+}

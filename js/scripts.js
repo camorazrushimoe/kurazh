@@ -1,14 +1,13 @@
 /* Trigger when page is ready */
+sessionStorage['firstVisit'];
 $(document).ready(function(){
 
 	// Your functions go here
-	var smallResultLow="Н-де... Что это мы все в Понарошку?! Есть идея получше - берешь на помощь друзей и играете вместе большую сериальную игру “Всерьез”";
-	var smallResultMed="Неплохо! Зови друзей, которые любят сериальчики, и играйте большую игру всерьез!";
-	var smallResultHigh="Господин сериальный Друзь? Вы ли это? Прошу всю команду знатоков сыграть “Всерьез”. Негоже вам в понарошку-то!";
+
 	var smallCorrectAnswersNumber=0;
 	var smallAnswers=["1Б 2Г 3А 4В","«Декстер»","«Позови меня с собой»","«LOST»","Малдер и Скалли","Донованов","На Мелмаке","«Чёрное зеркало»","В Париж","«Здравствуй, юность в сапогах!»"];
-	var smallGameTimeouts=[0,3000,3000,3000,3000,3000,3000,3000,3000,3000];
-	var bigGameQuestionsDelay=[0,3000,3000,3000,3000,3000,3000,0,0,3000,3000,3000,3000,3000,3000,0,0,3000,3000,3000,3000,3000,3000,0,0,3000,3000,3000,0,0,3000,3000,3000,3000,3000,3000,0,0,3000,3000,3000,3000,3000,3000,0,0,3000,3000,3000,3000,3000,3000,0,0,0];
+	var smallGameTimeouts=[26000,21000,15000,23000,8000,20000,15000,13000,15000,12000];
+	var bigGameQuestionsDelay=[38000,9000,14000,14000,15000,14000,3000,0,42000,8000,17000,19000,17000,21000,3000,0,21000,10000,9000,10000,11000,12000,3000,0,52000,10000,16000,3000,0,28000,14000,14000,15000,19000,18000,3000,0,23000,11000,10000,8000,8000,8000,3000,0,0,3000,3000,3000,3000,3000,3000,0,0,0];
 	var bigGameteamsList=[];
 	var biggameTeamAddingUnit=`
 		<div class="biggame-question-unit-list-unit-wrap">
@@ -16,6 +15,8 @@ $(document).ready(function(){
             <div class="biggame-question-unit-list-unit-btn">Еще команда</div>
         </div>
 	`;
+
+
 	function createResultListUnit(array){
 		var sum = array[1]+array[2]+array[3]+array[4]+array[5]+array[6]+array[7];
 		var unit = `<div class="biggame-question-unit-resultlist-unit">
@@ -41,7 +42,7 @@ $(document).ready(function(){
         return [biggameResultTableUnit,sum]
 	}
 
-	
+
 	function createResultUnit(teamTitle){
 		var unit = `
 		<div class="biggame-question-unit-teams-unit">
@@ -57,8 +58,19 @@ $(document).ready(function(){
 	`;
 		return unit
 	}
+	if($(".biggame")){
+		
+		if(sessionStorage["firstVisit"]=='false'){
+			$(".main").find(".minigame-question-unit-answer-picker").removeClass("hidden");
+		}
 
-	
+		sessionStorage["firstVisit"]=false;
+		
+	}
+	$(".popup-button").click(function(){
+		$(this).parents(".popup").addClass("hidden");
+		$(".main").find("audio").get(0).play();
+	})
 	$(".smallgame-body .main-buttons-unit").click(function(){
 		$('.smallgame-body .main').addClass("hide");
 		$(".smallgame-body .minigame").removeClass("hide");
@@ -69,7 +81,7 @@ $(document).ready(function(){
 			var interval=setInterval(function(){
 				var timerValue=$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html();
 				$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html(timerValue-1);
-				if(parseInt(timerValue)===1){
+				if(parseInt(timerValue)<2){
 						$(".slick-current").find(".minigame-question-unit-answer-next").html("Дальше");
 						$(".slick-current").find(".minigame-question-unit-answer-picker").addClass("disabled");
 						$(".slick-current").find(".minigame-question-unit-answer-next").removeClass("disabled");
@@ -80,29 +92,35 @@ $(document).ready(function(){
 			},1000)
 
 		},smallGameTimeouts[questionNumber]);
-		
+
+//мой хардкод
+		var myAudio = document.getElementById("main-audio");
+		myAudio.pause()
+//мой хардкод
+
 	})
 	$(".biggame-body .main-buttons-unit").click(function(){
 		$('.biggame-body .main').addClass("hide");
 		$(".biggame-body .biggame").removeClass("hide");
-		
+
 		var questionNumber=$(".biggame-question-wrap").slick('slickCurrentSlide');
-		$(".slick-current").find("video")[0].play();
+
+
 		if($(".slick-current").hasClass("smallTimer")){
 			$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(20);
 		} else if($(".slick-current").hasClass("medTimer")){
 			$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(59);
 		} else if($(".slick-current").hasClass("bigTimer")){
-			$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(79);
+			$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(89);
 		}
-		$(".slick-current").find("video")[0].play();
+
 		$(".slick-current").find(".biggame-question-unit-answer-input").focus();
 		setTimeout(function(){
 
 			var interval=setInterval(function(){
 				var timerValue=$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html();
 				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(timerValue-1);
-				if(parseInt(timerValue)===1){
+				if(parseInt(timerValue)<2){
 						$(".slick-current").find(".biggame-question-unit-answer-next").html("Дальше");
 						$(".slick-current").find(".biggame-question-unit-answer-input").attr("disabled","true");
 						$(".slick-current").find(".biggame-question-unit-answer-next").addClass("timeout");
@@ -113,12 +131,21 @@ $(document).ready(function(){
 
 		},bigGameQuestionsDelay[questionNumber]);
 
+		var myAudio = document.getElementById("main-audio");
+
+		myAudio.pause();
+		var myAudio = document.getElementById("teamsAdding-audio");
+		myAudio.play();
 	})
 
 	$(".minigame-question-unit-answer-picker").click(function(){
-		$(this).addClass("open");
+		if($(this).hasClass("open")){
+			$(this).removeClass("open")
+		} else{
+			$(this).addClass("open");
+		}
 	})
-	
+
 	$(".minigame-question-wrap").slick({
 		arrows:false,
 		infinite:false,
@@ -139,14 +166,20 @@ $(document).ready(function(){
 		swipe:false,
 		touchMove:false,
 	})
-	
+
 	$(".minigame-question-unit-answer-picker-unit:not(.chosen)").click(function(e){
 		e.stopPropagation();
 
 		$(this).parents(".minigame-question-unit").find(".minigame-question-unit-answer-next").removeClass("disabled");
 		$(".minigame-question-unit-answer-picker").removeClass("open");
 		$(this).parents(".minigame-question-unit").find(".minigame-question-unit-answer-picker-unit.chosen").html($(this).html());
-		
+		if($(this).parents(".main")){
+			var number=$(this).attr("data-number");
+			$(this).parents(".main").find(".minigame-question-unit-answer-picker-unit.chosen").html($(this).html());
+			$(this).parents(".main").find(".minigame-question-unit-answer-picker-unit.chosen").attr("data-number",number);
+			$(".biggame-question-unit.teamsAdding").find(".biggame-question-unit-answer-next").attr("data-number",number);
+		}
+
 	})
 	$(".minigame-question-unit-answer-next").click(function(){
 		var questionNumber=$(".minigame-question-wrap").slick('slickCurrentSlide');
@@ -159,22 +192,30 @@ $(document).ready(function(){
 			}
 
 			if($(this).parents(".minigame-question-unit").find('.minigame-question-unit-answer-picker-unit.chosen').html()==smallAnswers[questionNumber]){
-				smallCorrectAnswersNumber++;
+				if($(".slick-current").next().hasClass("last")){
+
+				} else{
+					smallCorrectAnswersNumber++;
+				}
+
 			}
 			if($(".slick-current").next().hasClass("last")){
 				var resultPage=$(".slick-current").next();
 				resultPage.find(".number").html(smallCorrectAnswersNumber);
 				if(smallCorrectAnswersNumber<=3&&0<=smallCorrectAnswersNumber){
-					resultPage.find(".subtext").html(smallResultLow);
+					resultPage.find(".lastSlide-kurazh.small ").siblings(".lastSlide-kurazh").remove();
+					resultPage.find("audio").get(0).play();
 				} else if(smallCorrectAnswersNumber<=7&&4<=smallCorrectAnswersNumber){
-					resultPage.find(".subtext").html(smallResultMed);
+					resultPage.find(".lastSlide-kurazh.med ").siblings(".lastSlide-kurazh").remove();
+					resultPage.find("audio").get(0).play();
 				}else if(smallCorrectAnswersNumber<=10&&8<=smallCorrectAnswersNumber){
-					resultPage.find(".subtext").html(smallResultMed);
+					resultPage.find(".lastSlide-kurazh.big ").siblings(".lastSlide-kurazh").remove();
+					resultPage.find("audio").get(0).play();
 				}
 			}
 			var curr=$(".minigame-progression-unit.current");
 			var next = curr.next();
-			
+
 			curr.removeClass("current");
 			curr.addClass("done");
 			next.addClass("current");
@@ -182,7 +223,7 @@ $(document).ready(function(){
 				var interval=setInterval(function(){
 					var timerValue=$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html();
 					$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html(timerValue-1);
-					if(parseInt(timerValue)===1){
+					if(parseInt(timerValue)<2){
 							$(".slick-current").find(".minigame-question-unit-answer-next").html("Дальше");
 							$(".slick-current").find(".minigame-question-unit-answer-picker").addClass("disabled");
 							$(".slick-current").find(".minigame-question-unit-answer-next").removeClass("disabled");
@@ -197,7 +238,10 @@ $(document).ready(function(){
 			$('video').each(function() {
     			$(this).get(0).pause();
 			});
-			$(".slick-current").find("video")[0].play();
+			if($(".slick-current").find("video")[0]){
+				$(".slick-current").find("video")[0].play();
+			}
+
 
 		}
 
@@ -205,11 +249,12 @@ $(document).ready(function(){
 	var roundNumber=1;
 
 	var lastSum=0;
+
 	$(".biggame-question-unit-answer-next").click(function(){
-		
+
 		var questionNumber=$(".biggame-question-wrap").slick('slickCurrentSlide');
 		if($(this).parents(".biggame-question-unit").hasClass("compare")||$(this).parents(".biggame-question-unit").hasClass("teamsAdding")){
-				
+
 		} else{
 			if($(this).parents(".biggame-question-unit").hasClass("lastQuestion")){
 				$(".biggame-progression").addClass("transparent");
@@ -220,51 +265,79 @@ $(document).ready(function(){
 					$(".biggame-progression").removeClass("transparent");
 					var currentTour=$(".biggame-progression").find(".biggame-progression-unit.current");
 					$(".biggame-progression").find(".biggame-progression-unit.current").next().addClass("current");
-					currentTour.removeClass("current");			
+					currentTour.removeClass("current");
 					currentTour.addClass("done");
 					var questionUnit=$(this).parents(".biggame-question-unit");
-					
+
 					var result=$(".slick-current").find(".biggame-question-unit-teams-unit");
-					
-					
+
+
 					if(questionUnit.hasClass("round-1")){
 						$.each(bigGameteamsList, function( index, value ) {
-							
-							value[1]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+							if(isNaN(parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val()))){
+								value[1]=0;
+							} else{
+								value[1]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+							}
 						});
-							
+
 					} else if(questionUnit.hasClass("round-2")){
 						$.each(bigGameteamsList, function( index, value ) {
-							
-							value[2]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+
+							if(isNaN(parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val()))){
+								value[2]=0;
+							} else{
+								value[2]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+							}
 						});
 					} else if(questionUnit.hasClass("round-3")){
 						$.each(bigGameteamsList, function( index, value ) {
-							
-							value[3]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+
+							if(isNaN(parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val()))){
+								value[3]=0;
+							} else{
+								value[3]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+							}
 						});
 					} else if(questionUnit.hasClass("round-4")){
 						$.each(bigGameteamsList, function( index, value ) {
-							
-							value[4]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+
+							if(isNaN(parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val()))){
+								value[4]=0;
+							} else{
+								value[4]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+							}
 						});
 					} else if(questionUnit.hasClass("round-5")){
 						$.each(bigGameteamsList, function( index, value ) {
-							
-							value[5]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+
+							if(isNaN(parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val()))){
+								value[5]=0;
+							} else{
+								value[5]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+							}
 						});
 					} else if(questionUnit.hasClass("round-6")){
 						$.each(bigGameteamsList, function( index, value ) {
-							
-							value[6]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+
+							if(isNaN(parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val()))){
+								value[6]=0;
+							} else{
+								value[6]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+							}
 						});
 					} else if(questionUnit.hasClass("round-7")){
+						$(".minigame-header-title").html("Игра «Всерьез». Итоги");
 						$.each(bigGameteamsList, function( index, value ) {
-							
-							value[7]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+
+							if(isNaN(parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val()))){
+								value[7]=0;
+							} else{
+								value[7]=parseInt(result.eq(index).find(".biggame-question-unit-teams-unit-input").val());
+							}
 						});
 					}
-					
+
 
 				} else{
 					var current=parseInt($(".biggame-progression-unit.current").find(".current").html());
@@ -272,6 +345,7 @@ $(document).ready(function(){
 				}
 			}
 		}
+
 		if($(this).parents(".biggame-question-unit").hasClass("round-7")){
 			bigGameteamsList.sort(function(a,b){
 				var k = a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7];
@@ -298,8 +372,8 @@ $(document).ready(function(){
 					 lastSum=unit[1];
 						$(".biggame-question-unit-resultTable").append(unit[0]);
 						$(".biggame-question-unit-resultlist").append(listUnit[0]);
-					
-					
+
+
 				});
 		}
 		if($(this).parents(".biggame-question-unit").hasClass("teamsAdding")){
@@ -314,18 +388,58 @@ $(document).ready(function(){
 					})
 					bigGameteamsList.push([title,0,0,0,0,0,0,0]);
 				}
-			})		
+			})
+			var roundCount=parseInt($(".biggame-question-unit.teamsAdding").find(".biggame-question-unit-answer-next").attr("data-number"));
+			 $(".biggame-progression-unit").eq(roundCount-1).prevAll(".biggame-progression-unit").removeClass("current");
+			 $(".biggame-progression-unit").eq(roundCount-1).prevAll(".biggame-progression-unit").addClass("done");
+			 $(".biggame-progression-unit").eq(roundCount-1).prevAll(".biggame-progression-unit").each(function(){
+			 	var allText=$(this).find(".all").html();
+			 	allText=parseInt(allText.substring(1,allText.length));
+			 	$(this).find(".current").html(allText);
+			 })
+			 $(".biggame-progression-unit").eq(roundCount-1).addClass("current");
+			 $(".minigame-header-title").html("Игра «Всерьез». Тур №"+roundCount);
+			switch (roundCount) {
+				  case 7:
+				  	$(".biggame-question-wrap").slick('slickGoTo', 45, true);
+				    break;
+				  case 6:
+				   $(".biggame-question-wrap").slick('slickGoTo', 37, true);
+				    break;
+				  case 5:
+				     $(".biggame-question-wrap").slick('slickGoTo', 29, true);
+				    break;
+				  case 4:
+				     $(".biggame-question-wrap").slick('slickGoTo', 24, true);
+				    break;
+				  case 3:
+				     $(".biggame-question-wrap").slick('slickGoTo', 16, true);
+				    break;
+				  case 2:
+				    $(".biggame-question-wrap").slick('slickGoTo', 8, true);
+				    break;
+				  case 1:
+
+				    break;
+
+			}
+			
+			var questionNumber=$(".biggame-question-wrap").slick('slickCurrentSlide');
+			
 		}
 		for(i=0; i<1000; i++){
 			    window.clearInterval(i);
 			}
 		$(".biggame-question-wrap").slick("slickNext");
+			$('audio').each(function() {
+    			$(this).get(0).pause();
+			});
 			$('video').each(function() {
     			$(this).get(0).pause();
 			});
 			if($(".slick-current").find("video")[0]){
 				$(".slick-current").find("video")[0].play();
-			} 
+			}
 			$(".slick-current").find(".biggame-question-unit-answer-input").focus();
 			if($(".slick-current").hasClass("smallTimer")){
 				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(20);
@@ -338,7 +452,7 @@ $(document).ready(function(){
 			var interval=setInterval(function(){
 				var timerValue=$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html();
 				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(timerValue-1);
-				if(parseInt(timerValue)===1){
+				if(parseInt(timerValue)<2){
 						$(".slick-current").find(".biggame-question-unit-answer-next").html("Дальше");
 						$(".slick-current").find(".biggame-question-unit-answer-input").attr("disabled","true");
 						$(".slick-current").find(".biggame-question-unit-answer-next").removeClass("disabled");
@@ -349,10 +463,16 @@ $(document).ready(function(){
 			},1000)
 
 		},bigGameQuestionsDelay[questionNumber]);
-			
-			
+		if($(this).parents(".biggame-question-unit").hasClass("compare")){
+			var curr=$(".biggame-question-wrap").slick('slickCurrentSlide');
+			$(this).parents(".biggame-question-unit").next().find("audio").get(0).play();
+
+		}
+
+
+
 	})
-	
+
 	$('.biggame-question-unit').on('click','.biggame-question-unit-teams-unit-controls-unit', function(){
 		var value=parseInt($(this).parents(".biggame-question-unit-teams-unit").find(".biggame-question-unit-teams-unit-input").val());
 		if(isNaN(value)){
@@ -379,9 +499,9 @@ $(document).ready(function(){
  		}
 
 	});
-	
+
 	$('.biggame-question-unit').on('click','.biggame-question-unit-list-unit-btn', function(){
-		
+
 	    var parent = $(this).parent(".biggame-question-unit-list-unit-wrap");
 			if(!(parent.find(".biggame-question-unit-list-unit").val().length === 0)){
 				if(parent.hasClass("locked")){
@@ -395,14 +515,26 @@ $(document).ready(function(){
 			}
 
 			var count = $('.biggame-question-unit-list-unit-wrap');
-			
+
  			if(count.length>0){
- 					
+
     				$(this).parents(".biggame-question-unit").find(".biggame-question-unit-answer-next").removeClass("disabled");
     		} else{
-    			
+
     			$(this).parents(".biggame-question-unit").find(".biggame-question-unit-answer-next").addClass("disabled");
     		}
+	});
+	$('.biggame-question-wrap').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  		$(".slick-current").next().find(".biggame-question-unit-answer-next").css("pointer-events","none");
+  		setTimeout(function(){
+  			$(".slick-current").find(".biggame-question-unit-answer-next").css("pointer-events","all");
+  		},3000)
+	});
+	$('.minigame-question-wrap').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  		$(".slick-current").find(".minigame-question-unit-answer-next").css("pointer-events","none");
+  		setTimeout(function(){
+  			$(".slick-current").find(".minigame-question-unit-answer-next").css("pointer-events","all");
+  		},3000)
 	});
 });
 
@@ -410,11 +542,11 @@ $(document).ready(function(){
 /* Optional triggers
 
 $(window).load(function() {
-	
+
 });
 
-$(window).resize(function() { 
-	
+$(window).resize(function() {
+
 });
 
 */
