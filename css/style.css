@@ -1388,6 +1388,25 @@ input[type=number]::-webkit-outer-spin-button {
     -o-transition: all ease-in-out 0.3s;
     -webkit-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s; }
+  .biggame-question-unit-answer-prev{
+    
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 33px;
+    float: left;
+    color: #1d212a;
+    width: 170px;
+    height: 66px;
+    text-align: center;
+    line-height: 66px;
+    background-color: #00fcff;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    margin-left:375px;
+    transition: all ease-in-out 0.3s; }
+  }
     .biggame-question-unit-answer-next:before {
       top: 2px;
       left: 32px;

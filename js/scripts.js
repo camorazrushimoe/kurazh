@@ -72,11 +72,18 @@ $(document).ready(function(){
 		$(".main").find("audio").get(0).play();
 	})
 	$(".smallgame-body .main-buttons-unit").click(function(){
+		if(typeof interval !== 'undefined'){
+			clearInterval(interval)
+		}
+		if(typeof timeout !== 'undefined'){
+			clearTimeout(timeout)
+		}
+		
 		$('.smallgame-body .main').addClass("hide");
 		$(".smallgame-body .minigame").removeClass("hide");
 		var questionNumber=$(".minigame-question-wrap").slick('slickCurrentSlide');
 		$(".slick-current").find("video")[0].play();
-		setTimeout(function(){
+		var timeout=setTimeout(function(){
 
 			var interval=setInterval(function(){
 				var timerValue=$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html();
@@ -100,6 +107,12 @@ $(document).ready(function(){
 
 	})
 	$(".biggame-body .main-buttons-unit").click(function(){
+		if(typeof interval !== 'undefined'){
+			clearInterval(interval)
+		}
+		if(typeof timeout !== 'undefined'){
+			clearTimeout(timeout)
+		}
 		$('.biggame-body .main').addClass("hide");
 		$(".biggame-body .biggame").removeClass("hide");
 
@@ -115,7 +128,7 @@ $(document).ready(function(){
 		}
 
 		$(".slick-current").find(".biggame-question-unit-answer-input").focus();
-		setTimeout(function(){
+		var timeout=setTimeout(function(){
 
 			var interval=setInterval(function(){
 				var timerValue=$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html();
@@ -182,16 +195,17 @@ $(document).ready(function(){
 
 	})
 	$(".minigame-question-unit-answer-next").click(function(){
+		
 		var questionNumber=$(".minigame-question-wrap").slick('slickCurrentSlide');
 
 		if($(this).hasClass("disabled")){
 
 		} else{
-			for(var i=0; i<1000; i++){
-			    window.clearInterval(i);
-				}
-			for(var i=0; i<1000; i++){
-				    window.clearTimeout(i);
+			if(typeof interval !== 'undefined'){
+			clearInterval(interval)
+			}
+			if(typeof timeout !== 'undefined'){
+				clearTimeout(timeout)
 			}
 
 			if($(this).parents(".minigame-question-unit").find('.minigame-question-unit-answer-picker-unit.chosen').html()==smallAnswers[questionNumber]){
@@ -222,7 +236,7 @@ $(document).ready(function(){
 			curr.removeClass("current");
 			curr.addClass("done");
 			next.addClass("current");
-			setTimeout(function(){
+			var timeout=setTimeout(function(){
 				var interval=setInterval(function(){
 					var timerValue=$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html();
 					$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html(timerValue-1);
@@ -254,7 +268,12 @@ $(document).ready(function(){
 	var lastSum=0;
 
 	$(".biggame-question-unit-answer-next").click(function(){
-
+		if(typeof interval !== 'undefined'){
+			clearInterval(interval)
+		}
+		if(typeof timeout !== 'undefined'){
+			clearTimeout(timeout)
+		}
 		var questionNumber=$(".biggame-question-wrap").slick('slickCurrentSlide');
 		if($(this).parents(".biggame-question-unit").hasClass("compare")||$(this).parents(".biggame-question-unit").hasClass("teamsAdding")){
 
@@ -348,7 +367,7 @@ $(document).ready(function(){
 				}
 			}
 		}
-
+		
 		if($(this).parents(".biggame-question-unit").hasClass("round-7")){
 			bigGameteamsList.sort(function(a,b){
 				var k = a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7];
@@ -380,6 +399,7 @@ $(document).ready(function(){
 				});
 		}
 		if($(this).parents(".biggame-question-unit").hasClass("teamsAdding")){
+			
 			$(".minigame-header-title").html("Игра «Всерьез». Тур №1");
 			$(".biggame-progression").removeClass("transparent");
 
@@ -404,21 +424,27 @@ $(document).ready(function(){
 			 $(".minigame-header-title").html("Игра «Всерьез». Тур №"+roundCount);
 			switch (roundCount) {
 				  case 7:
+				  	roundNumber=7;
 				  	$(".biggame-question-wrap").slick('slickGoTo', 45, true);
 				    break;
 				  case 6:
+				  	roundNumber=6;
 				   $(".biggame-question-wrap").slick('slickGoTo', 37, true);
 				    break;
 				  case 5:
+				  	roundNumber=5;
 				     $(".biggame-question-wrap").slick('slickGoTo', 29, true);
 				    break;
 				  case 4:
+				  	roundNumber=4;
 				     $(".biggame-question-wrap").slick('slickGoTo', 24, true);
 				    break;
 				  case 3:
+				  	roundNumber=3;
 				     $(".biggame-question-wrap").slick('slickGoTo', 16, true);
 				    break;
 				  case 2:
+				  	roundNumber=2;
 				    $(".biggame-question-wrap").slick('slickGoTo', 8, true);
 				    break;
 				  case 1:
@@ -430,12 +456,7 @@ $(document).ready(function(){
 			var questionNumber=$(".biggame-question-wrap").slick('slickCurrentSlide');
 			
 		}
-		for(var i=0; i<1000; i++){
-			    window.clearInterval(i);
-			}
-		for(var i=0; i<1000; i++){
-			    window.clearTimeout(i);
-			}
+		
 		$(".biggame-question-wrap").slick("slickNext");
 			$('audio').each(function() {
     			$(this).get(0).pause();
@@ -452,33 +473,51 @@ $(document).ready(function(){
 			} else if($(".slick-current").hasClass("medTimer")){
 				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(59);
 			} else if($(".slick-current").hasClass("bigTimer")){
-				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(79);
+				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(89);
 			}
-			setTimeout(function(){
-			var interval=setInterval(function(){
-				var timerValue=$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html();
-				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(timerValue-1);
-				if(parseInt(timerValue)<2){
-						$(".slick-current").find(".biggame-question-unit-answer-next").html("Дальше");
-						$(".slick-current").find(".biggame-question-unit-answer-input").attr("disabled","true");
-						$(".slick-current").find(".biggame-question-unit-answer-next").removeClass("disabled");
-						$(".slick-current").find(".biggame-question-unit-answer-next").addClass("timeout");
-						$(".slick-current").find(".biggame-question-unit-answer-input").val("Ой! Времени на ответ совсем не осталось");
-						clearInterval(interval);
-				}
+			var timeout=setTimeout(function(){
+				var interval=setInterval(function(){
+					var timerValue=$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html();
+					$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(timerValue-1);
+					if(parseInt(timerValue)<2){
+							$(".slick-current").find(".biggame-question-unit-answer-next").html("Дальше");
+							$(".slick-current").find(".biggame-question-unit-answer-input").attr("disabled","true");
+							$(".slick-current").find(".biggame-question-unit-answer-next").removeClass("disabled");
+							$(".slick-current").find(".biggame-question-unit-answer-next").addClass("timeout");
+							$(".slick-current").find(".biggame-question-unit-answer-input").val("Ой! Времени на ответ совсем не осталось");
+							clearInterval(interval);
+					}
 			},1000)
 
 		},bigGameQuestionsDelay[questionNumber]);
 		if($(this).parents(".biggame-question-unit").hasClass("compare")){
 			var curr=$(".biggame-question-wrap").slick('slickCurrentSlide');
-			$(this).parents(".biggame-question-unit").next().find("audio").get(0).play();
+
+			//if($(this).parents(".biggame-question-unit").next().find("audio")){
+				//$(this).parents(".biggame-question-unit").next().find("audio").get(0).play();
+			//}
 
 		}
 
 
 
 	})
+	$(".biggame-question-unit-answer-prev").click(function(){
+		$(".biggame-question-wrap").slick("slickPrev");
+		$('audio').each(function() {
+    			$(this).get(0).pause();
+			});
+		$(".slick-current").find("video").get(0).play();
 
+	})
+	$(".biggame-question-unit").on("keyup",'.biggame-question-unit-list-unit',function(){
+		if($(this).val()!=""){
+			$(this).parents(".biggame-question-unit").find(".biggame-question-unit-answer-next.answer").removeClass("disabled");
+		} else{
+			$(this).parents(".biggame-question-unit").find(".biggame-question-unit-answer-next.answer").addClass("disabled");
+		}
+	})
+	
 	$('.biggame-question-unit').on('click','.biggame-question-unit-teams-unit-controls-unit', function(){
 		var value=parseInt($(this).parents(".biggame-question-unit-teams-unit").find(".biggame-question-unit-teams-unit-input").val());
 		if(isNaN(value)){
