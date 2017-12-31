@@ -87,9 +87,9 @@ $(document).ready(function(){
 		$(".smallgame-body .minigame").removeClass("hide");
 		var questionNumber=$(".minigame-question-wrap").slick('slickCurrentSlide');
 		$(".slick-current").find("video")[0].play();
-		var timeout=setTimeout(function(){
+		setTimeout(function(){
 
-			var interval=setInterval(function(){
+			setInterval(function(){
 				var timerValue=$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html();
 				$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html(timerValue-1);
 				if(parseInt(timerValue)<2){
@@ -136,9 +136,9 @@ $(document).ready(function(){
 		}
 
 		$(".slick-current").find(".biggame-question-unit-answer-input").focus();
-		var timeout=setTimeout(function(){
+		setTimeout(function(){
 
-			var interval=setInterval(function(){
+			setInterval(function(){
 				var timerValue=$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html();
 				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(timerValue-1);
 				if(parseInt(timerValue)<2){
@@ -248,8 +248,8 @@ $(document).ready(function(){
 			curr.removeClass("current");
 			curr.addClass("done");
 			next.addClass("current");
-			var timeout=setTimeout(function(){
-				var interval=setInterval(function(){
+			setTimeout(function(){
+				setInterval(function(){
 					var timerValue=$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html();
 					$(".slick-current").find(".minigame-question-unit-answer-timer").find(".time").html(timerValue-1);
 					if(parseInt(timerValue)<2){
@@ -491,8 +491,8 @@ $(document).ready(function(){
 			} else if($(".slick-current").hasClass("bigTimer")){
 				$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(89);
 			}
-			var timeout=setTimeout(function(){
-				var interval=setInterval(function(){
+			setTimeout(function(){
+				setInterval(function(){
 					var timerValue=$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html();
 					$(".slick-current").find(".biggame-question-unit-answer-timer").find(".time").html(timerValue-1);
 					if(parseInt(timerValue)<2){
