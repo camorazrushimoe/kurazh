@@ -98,7 +98,9 @@ $(document).ready(function(){
 						$(".slick-current").find(".minigame-question-unit-answer-next").removeClass("disabled");
 						$(".slick-current").find(".minigame-question-unit-answer-next").addClass("timeout");
 						$(".slick-current").find(".minigame-question-unit-answer-picker-unit.chosen").html("Ой! Времени на ответ совсем не осталось");
-						clearInterval(interval);
+						for(var i=0;i<100000;i++){
+							window.clearInterval(i);
+						}
 				}
 			},1000)
 
@@ -146,7 +148,9 @@ $(document).ready(function(){
 						$(".slick-current").find(".biggame-question-unit-answer-input").attr("disabled","true");
 						$(".slick-current").find(".biggame-question-unit-answer-next").addClass("timeout");
 						$(".slick-current").find(".biggame-question-unit-answer-input").val("Ой! Времени на ответ совсем не осталось");
-						clearInterval(interval);
+						for(var i=0;i<100000;i++){
+							window.clearInterval(i);
+						}
 				}
 			},1000)
 
@@ -258,7 +262,9 @@ $(document).ready(function(){
 							$(".slick-current").find(".minigame-question-unit-answer-next").removeClass("disabled");
 							$(".slick-current").find(".minigame-question-unit-answer-next").addClass("timeout");
 							$(".slick-current").find(".minigame-question-unit-answer-picker-unit.chosen").html("Ой! Времени на ответ совсем не осталось");
-							clearInterval(interval);
+							for(var i=0;i<100000;i++){
+								window.clearInterval(i);
+							}
 					}
 				},1000)
 
@@ -501,7 +507,9 @@ $(document).ready(function(){
 							$(".slick-current").find(".biggame-question-unit-answer-next").removeClass("disabled");
 							$(".slick-current").find(".biggame-question-unit-answer-next").addClass("timeout");
 							$(".slick-current").find(".biggame-question-unit-answer-input").val("Ой! Времени на ответ совсем не осталось");
-							clearInterval(interval);
+							for(var i=0;i<100000;i++){
+								window.clearInterval(i);
+							}
 					}
 			},1000)
 
