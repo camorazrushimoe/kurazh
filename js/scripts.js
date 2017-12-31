@@ -59,7 +59,7 @@ $(document).ready(function(){
 		return unit
 	}
 	if($(".biggame")){
-		
+
 		if(sessionStorage["firstVisit"]=='false'){
 			$(".main").find(".minigame-question-unit-answer-picker").removeClass("hidden");
 		}
@@ -187,8 +187,11 @@ $(document).ready(function(){
 		if($(this).hasClass("disabled")){
 
 		} else{
-			 for(i=0; i<1000; i++){
+			for(var i=0; i<1000; i++){
 			    window.clearInterval(i);
+				}
+			for(var i=0; i<1000; i++){
+				    window.clearTimeout(i);
 			}
 
 			if($(this).parents(".minigame-question-unit").find('.minigame-question-unit-answer-picker-unit.chosen').html()==smallAnswers[questionNumber]){
@@ -427,8 +430,11 @@ $(document).ready(function(){
 			var questionNumber=$(".biggame-question-wrap").slick('slickCurrentSlide');
 			
 		}
-		for(i=0; i<1000; i++){
+		for(var i=0; i<1000; i++){
 			    window.clearInterval(i);
+			}
+		for(var i=0; i<1000; i++){
+			    window.clearTimeout(i);
 			}
 		$(".biggame-question-wrap").slick("slickNext");
 			$('audio').each(function() {
