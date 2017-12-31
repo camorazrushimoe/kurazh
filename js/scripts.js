@@ -72,7 +72,7 @@ $(document).ready(function(){
 		$(".main").find("audio").get(0).play();
 	})
 	$(".smallgame-body .main-buttons-unit").click(function(){
-		for(var i=0;i<100;i++){
+		for(var i=0;i<10000;i++){
 			window.clearInterval(i);
 			window.clearTimeout(i);
 		}
@@ -111,7 +111,7 @@ $(document).ready(function(){
 
 	})
 	$(".biggame-body .main-buttons-unit").click(function(){
-		for(var i=0;i<100;i++){
+		for(var i=0;i<10000;i++){
 			window.clearInterval(i);
 			window.clearTimeout(i);
 		}
@@ -209,7 +209,7 @@ $(document).ready(function(){
 		if($(this).hasClass("disabled")){
 
 		} else{
-			for(var i=0;i<100;i++){
+			for(var i=0;i<10000;i++){
 				window.clearInterval(i);
 				window.clearTimeout(i);
 			}
@@ -280,7 +280,7 @@ $(document).ready(function(){
 	var lastSum=0;
 
 	$(".biggame-question-unit-answer-next").click(function(){
-		for(var i=0;i<100;i++){
+		for(var i=0;i<10000;i++){
 			window.clearInterval(i);
 			window.clearTimeout(i);
 		}
